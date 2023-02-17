@@ -1,0 +1,95 @@
+/* start variables  */
+:root {
+    --main-color: #19c8fa;
+    --transparent-color: rgb(15 116 143 /70%);
+    --section-padding: 100px
+}
+
+/* end variables */
+
+/* start golbal rules  */
+* {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* end global rules  */
+
+
+
+
+/* small  */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* large  */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* start components  */
+.main-headeing {
+    text-align: center;
+}
+
+.main-headeing h2::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    height: 2px;
+    background-color: #333;
+    bottom: -30px;
+    width: 120px;
+}
+
+.main-headeing h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    background-color: white;
+    bottom: -38px;
+}
+
+/* end components  */
+
+/* start header */
