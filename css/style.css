@@ -63,8 +63,19 @@ ul {
 }
 
 /* start components  */
+
 .main-headeing {
     text-align: center;
+    padding: 100px;
+}
+
+.main-headeing h2{
+    
+    font-weight: normal;
+    font-size: 40px;
+    position: relative;
+    margin-bottom: 70px;
+    text-transform: uppercase;
 }
 
 .main-headeing h2::before {
@@ -73,7 +84,7 @@ ul {
     left: 50%;
     transform: translate(-50%);
     height: 2px;
-    background-color: #333;
+    background-color: #000000;
     bottom: -30px;
     width: 120px;
 }
@@ -82,13 +93,22 @@ ul {
     content: "";
     position: absolute;
     left: 50%;
-    transform: translatex(-50%);
+    transform: translateX(-50%);
     width: 14px;
     height: 14px;
     border-radius: 50%;
-    border: 2px solid #333;
+    border: 2px solid #000000;
     background-color: white ;
+    bottom: -37px;
     
+
+}
+.main-headeing p{
+    color:#777;
+    margin: 0 auto 100px;
+    max-width: 100%;
+    line-height: 2;
+    width: 550px;
 
 }
 
@@ -169,6 +189,10 @@ ul {
     transition: 0.3s;
     position: relative;
     z-index: 2;
+
+ }
+ .header .search:hover{
+    color: var(--main-color);
 
  }
  /* .header nav  ul li .active, */
@@ -296,3 +320,15 @@ ul {
     
 }
 /* End landing */
+/* Start Services */
+.services{
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+.services .sev-box {
+    display: flex;
+    
+}
+.services .sev-box i{}
+.services .sev-box h3{}
+.services .sev-box p{}
