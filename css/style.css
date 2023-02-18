@@ -1,7 +1,7 @@
 /* start variables  */
 :root {
     --main-color: #19c8fa;
-    --transparent-color: rgb(15 116 143 /70%);
+    --transparent-color: rgb(15 116 143 / 30%);
     --section-padding: 100px
 }
 
@@ -88,17 +88,20 @@ ul {
     border-radius: 50%;
     border: 2px solid #333;
     background-color: white ;
+    
 
 }
 
 /* end components  */
 
 /* start header */
+
 .header{
     position: absolute;
     left: 0;
     width: 100%;
     z-index: 2;
+    
 
 }
  .header .container{
@@ -150,7 +153,7 @@ ul {
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: rgb(0, 0, 0 / 50%);
+        background-color: rgb(0 0 0 / 50%);
     }
     .header nav .toggle-menu:hover + ul li a{
         padding: 15px; 
@@ -169,7 +172,7 @@ ul {
 
  }
  /* .header nav  ul li .active, */
- .header nav  ul li a:hover{
+ .header nav ul li a:hover{
     color: var(--main-color);
     border-bottom: 1px solid var(--main-color);
  }
@@ -196,3 +199,100 @@ ul {
 
 
 /* End header */
+/* start landing */
+.landing{
+    min-height: 100vh;
+    background-image: url('../images/the-imagination_3840x2160.jpg');
+    background-size: cover;
+    /* filter: blur(3px); */
+    position: relative;
+
+} 
+.landing .overlay{
+ position: absolute;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: 100%;
+
+ background-color: rgb(0 0 0 /70%);
+}
+.landing .text{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  width: 50%;
+  padding: 50px;
+    color:white;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--transparent-color);
+}
+
+.landing .text .content{
+    max-width: 500px;
+}
+@media (max-width:767px) {
+    .landing .text{width: 100%;}
+    .landing .text .content{
+        max-width: 100%;
+    }
+}
+.landing .text .content h2{
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.landing .text .content p{
+    font-size: 14px;
+    line-height: 2;
+}
+.landing .change-background{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+  
+   
+}
+.landing .left{
+    left:30px;
+}
+
+.landing .right{
+    right:30px;
+}
+.landing .change-background:hover{
+    
+    color: var(--main-color);
+
+}
+.landing .bullets{
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%) ;
+    bottom: 30px;
+    display: flex;
+}
+.landing .bullets li{
+ width: 20px;
+ height: 20px;
+ border: 1px solid white;
+ border-radius: 50%;
+ margin-right: 10px;
+
+}
+
+.landing .bullets li.a:hover{
+    background-color: var(--main-color);
+}
+.landing .bullets li.b:hover{
+    background-color: var(--main-color);
+}
+.landing .bullets li.c:hover{
+    background-color: var(--main-color);
+    
+}
+/* End landing */
